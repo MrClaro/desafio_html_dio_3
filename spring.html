@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="assets/images/WikiTheft.png" width="150px" />
+        </div>
+        <div id="divBusca">
+            <input list="recomendados" type="text" id="txtBusca" placeholder="Buscar..."/>
+            <button id="btnBusca">Buscar</button>
+          </div>
+        <datalist id="recomendados">
+            <option>Java</option> 
+            <option>Spring Boot</option> 
+        </datalist>
+    </header>
+
+    <div class="bar"></div>
+
+    <div class="content">
+        <aside class="sidebar">
+            <h2>Linguagens de Programação</h2>
+            <ul>
+                <li><a href="index.html">Java</a></li>
+                <li><a href="spring.html">Spring</a></li>
+
+            </ul>
+        </aside>
+
+        <main class="main">
+            <h1 id="inicio">Spring Boot </h1>
+            <p>O Java Spring Framework (Spring Framework) é um framework bastante conhecido de nível empresarial, de
+                software livre, para criar aplicativos independentes de nível de produção que são executados na Java
+                Virtual Machine (JVM).
+            </p>
+            <p>O Java Spring Boot (Spring Boot) é uma ferramenta que facilita e agiliza o desenvolvimento de aplicativos
+                da web e de microsserviços com o Spring Framework por meio de três principais recursos:
+            <ul>
+                <li> - Autoconfiguração</li>
+                <li> - Uma abordagem opinativa à configuração</li>
+                <li> - A capacidade de criar aplicativos independentes</li>
+            </ul>
+            </p>
+            <p>
+                Esses recursos trabalham juntos para oferecer uma ferramenta que permite configurar um aplicativo
+                baseado em Spring com poucos requisitos de instalação e configuração.
+            </p>
+
+            <figure><img id="logo_spring" src="./assets/images/download.png" alt="Logo Spring boot">
+                <p>Logotipo do Spring boot</p>
+            </figure>
+
+            <h2 id="funcionamento">Como o spring boot funciona?</h2>
+            <p>A princípio, para que tudo isso funcione, o Spring Boot utiliza o conceito de convenção sobre
+                configuração, ou seja, o Spring Boot já possui uma série de configurações padrões para as bibliotecas
+                Spring ou de terceiros que você deseja utilizar.</p>
+            <p>Entretanto, isso não impede que você personalize essas configurações. É bastante interessante que só é
+                necessário alterar as configurações que deseja, as demais configurações do projeto seguem inalteradas.
+            </p>
+            <p>Todo esse processo de autoconfiguração e gerenciamento de dependências providos pelo Spring Boot é feito
+                através dos Starters - uma dependência que inicializa algum módulo dentro do nosso projeto.</p>
+            <p>Só para exemplificar, imagine o desenvolvimento de uma aplicação web com o Spring Web MVC, seria
+                necessário adicionar no nosso projeto as dependências do Spring Core, Spring Web e Spring Web MVC. Além
+                disso haveria a necessidade de configuração dos arquivos XML para que essas dependências funcionem
+                corretamente. Com o Spring Boot, adicionando-se o <code>spring-boot-starter-web</code>  o projeto já estará
+                configurado corretamente para utilizar o Spring Web MVC. </p>
+                <p>Ainda assim existe outra vantagem sobre o uso dos starters do Spring Boot, é que ao utilizá-los, o nosso arquivo de dependências fica menor e mais organizado.</p>
+        </main>
+
+        <section class="anchors">
+            <h2>Neste Artigo</h2>
+            <ul>
+                <li><a href="#inicio">O que é Spring boot?</a></li>
+                <li><a href="#funcionamento">Como funciona?</a></li>
+            </ul>
+        </section>
+    </div>
+
+    <footer class="footer">
+        @2023 - WikiTheft - Todos os Direitos reservados.
+    </footer>
+</body>
+
+</html>
